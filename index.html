@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tasks｜日々のタスクを効率的に管理</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- site stylesheet-->
+    <link href="/css/style.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- mailform -->
+    <link rel="stylesheet" href="/mailform/mailform.css">
+    <script src="/mailform/mailform.js"></script>
+    <!-- platform.js -->
+    <script src="/js/platform.js"></script>
+    <script src="/js/index.js"></script>
+</head>
+<body>
+<!-- header begins -->
+<div id="wrapper" class="container-fluid bg-warning">
+    <header class="container px-5 py-3">
+        <a href="./">
+            <img class="align-top" src="./images/img_logo.png" width="40" height="40" alt="Tasksロゴ">
+            <span class="h2 text-white">Tasks</span>
+        </a>
+        <a href="./document"><button type="button" class="btn btn-success float-end ms-2">ドキュメント</button></a>
+        <!-- <button id="inquirery" type="button" class="btn btn-light float-end">お問合せ</button> -->
+    </header>
+</div>
+<!-- header begins -->
+<!-- main contents begins -->
+<div id="main" class="container-fluid">
+    <div id="mainInner" class="container">
+        <div class="row">
+            <div class="col-5">
+                <p class="display-5 ps-5" style="margin-top: 50px;">Tasksで日々のタスクを<br>効率的に管理</p>
+                <p class="h3 ps-5 fw-bold">Tasks ver 1.0.2 for Windows and Mac</p>
+                <p class="ps-3 pe-0">
+                    Tasksでは、日々のタスクをさまざまな形で管理できます。<br>
+                    登録したタスクから今日のタスクをピックアップして、「今日のタスクリスト」を作成したり、
+                    重要なタスクにスターマークをつけて、忘れないようにしたり、
+                    タスクに期限を設定して、今日・今週・来週のスケジュールを作成したり、
+                    タスクをグループにまとめて複数のタスクを一括管理したりできます。<br>
+                </p>
+                <p class="text-center">
+                    <button id="download" type="button" class="btn btn-primary" style="font-size: 0.8rem;">インストーラをダウンロード（無料）</button>
+                </p>
+            </div>
+            <div class="col-7 text-center">
+                <img class="mt-5" src="./images/img_main.png" alt="メインイメージ" width="600" height="360">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- main contents ends -->
+<!-- contents begins -->
+<div id="contents" class="container-fluid">
+    <div id="contentsInner" class="container px-5 py-3">
+        <div class="row">
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h6 class="card-title fw-bold"><i class="bi bi-check-circle pe-1"></i>今日のタスク</h6>
+                        <p class="card-text">
+                            登録したタスクから今日のタスクをピックアップして、今日すべきタスクを設定することができます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h6 class="card-title fw-bold"><i class="bi bi-check-circle pe-1"></i>スタータスク</h6>
+                        <p class="card-text">
+                            重要なタスクにスターマークを付けて、忘れないように管理することができます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h6 class="card-title fw-bold"><i class="bi bi-check-circle pe-1"></i>スケジュール</h6>
+                        <p class="card-text">
+                            タスクに期限を設定して、タスクの予定を管理することができます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h6 class="card-title fw-bold"><i class="bi bi-check-circle pe-1"></i>タスクグループ</h6>
+                        <p class="card-text">
+                            複数のタスクを1つのグループにまとめて複数のタスクを一括管理することができます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h6 class="card-title fw-bold"><i class="bi bi-check-circle pe-1"></i>ステップ管理</h6>
+                        <p class="card-text">
+                            タスクの詳細タスクをステップとして完了・未完了を管理することができます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h6 class="card-title fw-bold"><i class="bi bi-check-circle pe-1"></i>進捗管理</h6>
+                        <p class="card-text">
+                            タスクの進捗状況を5種類で管理して、タスクが今どの段階かを管理することができます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h6 class="card-title fw-bold"><i class="bi bi-check-circle pe-1"></i>ファイル管理</h6>
+                        <p class="card-text">
+                            タスクに関連するファイルをタスクに紐つけて、いつでも閲覧することができます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h6 class="card-title fw-bold"><i class="bi bi-check-circle pe-1"></i>メモ</h6>
+                        <p class="card-text">
+                            タスクにメモを残してタスクの詳細を管理することができます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- contents ends -->
+<!-- footer begins -->
+<div id="footerTopWrapper" class="container-fluid bg-dark mt-5">
+    <div id="footerTop" class="container text-start text-white px-5 py-2">
+        <span class="h3 text-white">Tasks</span>
+        <address class="float-end pt-2" style="font-size: 0.8rem;">&copy;&nbsp;Shigeru&nbsp;Kuratani&nbsp;All&nbsp;Rights&nbsp;Reserved.</address>
+    </div>
+</div>
+<div id="footerBodyWrapper" class="container-fluid bg-secondary">
+    <div id="footerBody" class="container text-white px-5 pt-2 pb-5"></div>
+</div>
+<!-- footer begins -->
+<!-- trial warning modal begins -->
+<div id="trialWarningModal" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">警告</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                インストーラのダウンロードは、WindowsもしくはMacOSのPCからダウンドードしてください。
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+

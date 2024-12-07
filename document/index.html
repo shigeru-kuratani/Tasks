@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tasks Document｜HOME</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <!-- site stylesheet-->
+    <link href="/css/style.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- wrapper begins -->
+<div id="wrapper" class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <!-- sidebar begins -->
+            <div class="col-3 ps-0 pe-0">
+                <!-- header begins -->
+                <header class="text-center bg-warning pt-3 pb-2">
+                    <div>
+                        <a href="../">
+                            <img class="align-top" src="../images/img_logo.png" width="40" height="40" alt="Tasksロゴ">
+                            <span class="h2 text-white">Tasks</span>
+                        </a>
+                    </div>
+                    <h3 class="mt-1 text-white">Document Site</h3>
+                </header>
+                <!-- header ends -->
+                <!-- nav begins -->
+                <script>
+                    $.get("./nav.html", function(data) {
+                        $("header").after(data)
+                    })
+                </script>
+                <!-- nav ends -->
+            </div>
+            <!-- sidebar ends -->
+            <!-- contents begins -->
+            <div class="col-9 ps-0 pe-0">
+                <div id="contents" class="px-4 py-3">
+                    <p class="h3 py-3">Tasksで日々のタスクを効率的に管理</p>
+                    <p class="mb-4">
+                        Tasksでは、日々のタスクをさまざまな形で管理できます。<br>
+                        登録したタスクから今日のタスクをピックアップして、「今日のタスクリスト」を作成したり、<br>
+                        重要なタスクにスターマークをつけて、忘れないようにしたり、<br>
+                        タスクに期限を設定して、今日・今週・来週のスケジュールを作成したり、<br>
+                        タスクをグループにまとめて複数のタスクを一括管理したりできます。<br>
+                        このサイトでは、Tasksの使い方をご説明していきます。
+                    </p>
+                    <h5 id="screenStructure">画面構成</h5>
+                    <img class="img-fluid" src="../images/img_screenStructure.png" alt="Tasks画面構成">
+                </div>
+            </div>
+            <!-- contents ends -->
+        </div>
+        <!-- footer begins -->
+        <footer class="row text-center text-white pt-3 pb-3">
+            <address>&copy;&nbsp;Shigeru&nbsp;Kuratani&nbsp;All&nbsp;Rights&nbsp;Reserved.</address>
+        </footer>
+        <!-- footer ends -->
+    </div>
+</div>
+<!-- wrapper ends -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

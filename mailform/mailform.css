@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*----------------------------------------------------------
+mailform setting
+----------------------------------------------------------*/
+#bgMailform {
+	z-index: 9998;
+}
+#mailformContainer {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: #fff;
+	filter: alpha(opacity=0);
+	opacity: 0.00;
+	z-index: 9999;
+}
+
+#mailform {
+	width: 600px;
+	padding: 25px;
+	position: absolute;
+	background-color: #fff;
+}
+
+#mailform h3 {
+	margin-top: 0px;
+	padding-left: 8px;
+	border-left: 5px solid #999;
+	font-size: 125%;
+}
+
+
+#mailform #close {
+	position: relative;
+	top: -40px;
+}
+
+

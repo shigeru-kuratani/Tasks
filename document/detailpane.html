@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tasks Document｜詳細ペイン</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <!-- site stylesheet-->
+    <link href="/css/style.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <!-- smooth-scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 100   //スクロールする速さ
+        });
+    </script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- wrapper begins -->
+<div id="wrapper" class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <!-- sidebar begins -->
+            <div id="sidebar" class="col-3 ps-0 pe-0">
+                <!-- header begins -->
+                <header class="text-center bg-warning pt-3 pb-2">
+                    <div>
+                        <a href="../">
+                            <img class="align-top" src="../images/img_logo.png" width="40" height="40" alt="Tasksロゴ">
+                            <span class="h2 text-white">Tasks</span>
+                        </a>
+                    </div>
+                    <h3 class="mt-1 text-white">Document Site</h3>
+                </header>
+                <!-- header ends -->
+                <!-- nav begins -->
+                <script>
+                    $.get("./nav.html", function(data) {
+                        $("header").after(data)
+                    })
+                </script>
+                <!-- nav ends -->
+            </div>
+            <!-- sidebar ends -->
+            <!-- contents begins -->
+            <div class="col-9 ps-0 pe-0">
+                <div id="contents" class="px-4 py-3">
+                    <p class="h3 py-3">詳細ペインの機能</p>
+                    <p class="mb-4">
+                        Tasksの詳細ペインでは以下の機能を実行できます。
+                    </p>
+                    <ul>
+                        <li>タスクタイトル編集</li>
+                        <li>スター追加</li>
+                        <li>ステップの追加</li>
+                        <li>今日のタスクに追加</li>
+                        <li>期限設定</li>
+                        <li>進捗状況</li>
+                        <li>ファイルの追加</li>
+                        <li>メモ編集</li>
+                        <li>詳細ペイン非表示</li>
+                        <li>タスク削除</li>
+                    </ul>
+                    <p>
+                        このページでは、詳細ペインの使い方をご説明していきます。
+                    </p>
+                    <h5 id="editTitle">タスクタイトル編集</h5>
+                    <p>
+                        詳細ペインの「タスク名（タイトル）」フィールドを編集することができます。<br>
+                        編集結果は即時に保存されます。
+                    </p>
+                    <img src="../images/img_editTitle.png" alt="タスクタイトル編集">
+                    <h5 id="addStar">スター追加</h5>
+                    <p>
+                        詳細ペインのスターボタンのクリックで、重要なタスクをスタータスクとしてリスト表示できます。<br>
+                        スターボタンのクリックで、スターを追加したタスクからスターを外すこともできます。
+                    </p>
+                    <img src="../images/img_addStar.png" alt="スター追加">
+                    <h5 id="addStep">ステップの追加</h5>
+                    <p>
+                        詳細ペインの「ステップ追加」で、タスクの詳細な作業を登録することができます。<br>
+                        ラジオボタンの押下で、ステップが完了となります。（完了を戻すこともできます）<br>
+                        バツボタンのクリックで、ステップを削除することができます。
+                    </p>
+                    <img src="../images/img_addStep.png" alt="ステップの追加">
+                    <h5 id="addTodayTask">今日のタスクに追加</h5>
+                    <p>
+                        詳細ペインの「今日のタスクに追加」で、今日取り組むべきタスクを今日のタスクとしてリスト表示できます。<br>
+                        バツボタンの押下で、今日のタスクから削除することもできます。<br>
+                    </p>
+                    <img src="../images/img_addTodayTask.png" alt="今日のタスクに追加">
+                    <h5 id="addTimeLimit">期限設定</h5>
+                    <p>
+                        詳細ペインの「期限」で、タスクの期限を設定することができます。<br>
+                        バツボタンの押下で、期限を削除することもできます。<br>
+                    </p>
+                    <img src="../images/img_addTimeLimit.png" alt="期限設定">
+                    <h5 id="editStatus">進捗状況</h5>
+                    <p>
+                        詳細ペインの「進捗状況」で、タスクの進捗状況を設定することができます。<br>
+                        タスクの状況の応じて5種類のステータスを設定することができます。<br>
+                    </p>
+                    <img src="../images/img_editStatus.png" alt="進捗状況">
+                    <h5 id="addFile">ファイルの追加</h5>
+                    <p>
+                        詳細ペインの「進捗状況」で、タスクの進捗状況を設定することができます。<br>
+                        タスクの状況の応じて5種類のステータスを設定することができます。<br>
+                    </p>
+                    <img src="../images/img_addFile.png" alt="ファイルの追加">
+                    <h5 id="editMemo">メモ編集</h5>
+                    <p>
+                        詳細ペインの「メモの表示・編集」で、タスクのメモを記録することができます。<br>
+                        メモの編集は、編集と同時に保存されます。<br>
+                    </p>
+                    <img src="../images/img_editMemo.png" alt="メモ編集">
+                    <h5 id="hideDetailPane">詳細ペイン非表示</h5>
+                    <p>
+                        詳細ペインの矢印ボタンのクリックで、詳細ペインを非表示にすることができます。
+                    </p>
+                    <img src="../images/img_hideDetailPane.png" alt="詳細ペイン非表示">
+                    <h5 id="deleteTaskDetail">タスク削除</h5>
+                    <p>
+                        詳細ペインのゴミ箱ボタンのクリックで、タスクを削除することができます。
+                    </p>
+                    <img src="../images/img_deleteTaskDetail.png" alt="タスク削除">
+                </div>
+            </div>
+            <!-- contents ends -->
+        </div>
+        <!-- footer begins -->
+        <footer class="row text-center text-white pt-3 pb-3">
+            <address>&copy;&nbsp;Shigeru&nbsp;Kuratani&nbsp;All&nbsp;Rights&nbsp;Reserved.</address>
+        </footer>
+        <!-- footer ends -->
+        <!-- pagetop begins -->
+        <div id="pagetop"><a href="#wrapper"><i class="bi bi-arrow-up-square display-6 position-fixed bottom-0 end-0 me-5 mb-5 pb-4"></i></a></div>
+        <!-- pagetop ends -->
+    </div>
+</div>
+<!-- wrapper ends -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

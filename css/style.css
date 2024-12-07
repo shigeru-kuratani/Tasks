@@ -1,0 +1,120 @@
+body {
+	width: 100%;
+	background-color: transparent;
+	vertical-align : top;
+	font-family : Meiryo, "Hiragino Kaku Gothic Pro", "MS PGothic", Osaka, sans-serif;
+	font-size: 100%;
+	line-height: 1.75em;
+}
+
+a:link {
+	color: #00a;
+}
+a:visited {
+	color: #066;
+}
+a:hover {
+	color: #900;
+	text-decoration: underline;
+}
+a:active {
+	color: #900;
+	text-decoration: underline;
+}
+
+img,object {
+	border: 0;
+	vertical-align: top;
+}
+
+/*---------------------------------------------------------
+ wrapper
+----------------------------------------------------------*/
+#wrapper {
+	background-color: #f9f9f9;
+}
+
+/*---------------------------------------------------------
+ header
+----------------------------------------------------------*/
+header a,
+header a:hover {
+	text-decoration: none;
+}
+
+/*---------------------------------------------------------
+ sidebar
+----------------------------------------------------------*/
+
+/*---------------------------------------------------------
+ nav
+----------------------------------------------------------*/
+nav {
+	background-color: #444;
+}
+
+nav ul {
+	list-style-type: none;
+	padding-inline-start: 0px;
+}
+
+nav ul li a {
+	display: block;
+	padding: 3px 30px;
+}
+
+nav ul.sub li a {
+	display: block;
+	padding: 3px 30px 3px 50px;
+}
+
+nav ul li a:link,
+nav ul li a:visited,
+nav ul li a:hover,
+nav ul li a:active {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	background-color: #666;
+}
+
+/*---------------------------------------------------------
+ contents
+----------------------------------------------------------*/
+#contents h5 {
+	padding-left: 8px;
+	border-left: 5px solid #fc9003;
+}
+
+#contents .card {
+	height: 150px;
+	margin-top: 30px;
+	border-top: 5px solid #fc9003;
+}
+
+#contents .card .card-text {
+	font-size: 0.85rem;
+}
+
+/*---------------------------------------------------------
+ footer
+----------------------------------------------------------*/
+footer {
+	background-color: #444;
+}
+
+#footerBody ul {
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+#footerBody ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#footerBody ul li a:hover {
+	text-decoration: underline;
+}

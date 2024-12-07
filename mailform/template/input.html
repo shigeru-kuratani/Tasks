@@ -1,0 +1,40 @@
+<div id="mailform">
+	<h3>入力画面</h3>
+	<button id="close" type="button" class="btn-close float-end" aria-label="Close"></button>
+	<div id="formMessage" class="alert alert-warning mt-3" role="alert">
+		お問合せ内容をご記入ください。<br>
+		※は必須事項ですので、漏れなくご記入をお願いします。
+	</div>
+	<div class="small text-danger">※は必須です</div>
+	<div class="form-group row mb-2">
+		<label for="name" class="col-4 col-form-label text-right">
+			氏名<span class="small text-danger">※</span>
+		</label>
+		<div class="col">
+			<input id="name" class="form-control" type="text" placeholder="">
+		</div>
+	</div>
+	<div class="form-group row mb-2">
+		<label for="mailaddress" class="col-4 col-form-label text-right">
+			メールアドレス<span class="small text-danger">※</span>
+		</label>
+		<div class="col">
+			<input id="mailaddress" class="form-control" type="text" placeholder="">
+		</div>
+	</div>
+	<div class="form-group row mb-2">
+		<label for="content" class="col-4 col-form-label text-right">
+			問合せ内容<span class="small text-danger">※</span>
+		</label>
+		<div class="col">
+			<textarea id="content" class="form-control" rows="5"></textarea>
+		</div>
+	</div>
+	<div class="form-group row mb-2">
+		<div class="col-4"></div>
+		<div class="col">
+			<button id="reset" class="btn btn-success">リセット</button>
+			<button id="confirm" class="btn btn-success">確認</button>
+		</div>
+	</div>
+</div>

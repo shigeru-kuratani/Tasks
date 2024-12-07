@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*---------------------------------------------------------
+ base setting
+----------------------------------------------------------*/
+body {
+	width: 100%;
+	background-color: #fff;
+	vertical-align : top;
+	font-family : Meiryo, "Hiragino Kaku Gothic Pro", "MS PGothic", Osaka, sans-serif;
+	font-size: 100%;
+	line-height: 1.75em;
+}
+
+a:link {
+	color: #00a;
+}
+a:visited {
+	color: #066;
+}
+a:hover {
+	color: #900;
+	text-decoration: underline;
+}
+a:active {
+
+	color: #900;
+	text-decoration: underline;
+}
+
+img,object {
+	border: 0;
+	vertical-align: bottom;
+}
+
+/*---------------------------------------------------------
+ wrapper setting
+----------------------------------------------------------*/
+#wrapper {
+	width: 1000px;
+	margin: 50px auto;
+}
+
+#wrapper h1 {
+	text-align: center;
+}
+
+/*---------------------------------------------------------
+ loginForm setting
+----------------------------------------------------------*/
+#loginForm {
+	width: 400px;
+	margin: 0px auto;
+}
+
+#loginForm #message {
+	color: #f00;
+}
+
+#loginForm table {
+	width: 400px;
+}
+
+#loginForm table th {
+	width: 125px;
+}
+
+#loginForm table td input[type="text"],
+#loginForm table td input[type="password"] {
+	width: 240px;
+}
+
+/*---------------------------------------------------------
+ table
+----------------------------------------------------------*/
+table.border {
+	clear: both;
+	float: left;
+	margin-bottom: 10px;
+	border-collapse: collapse;
+	border: 1px solid #999;
+}
+
+table.border th,
+table.border td {
+	padding: 5px;
+	border: 1px solid #999;
+}
+
+table.border th {
+	font-weight: normal;
+	background-color: #e6e6e6;
+}
+
+.buttonArea {
+	clear: both;
+	float: left;
+}
+
+/*---------------------------------------------------------
+ leftCol・rightCol
+----------------------------------------------------------*/
+#leftCol {
+	float: left;
+}
+
+#leftCol h3 {
+	margin-bottom: 5px;
+	clear: left;
+	float: left;
+}
+
+#leftCol table {
+	margin-bottom: 25px;
+}
+
+#leftCol table th {
+	width: 170px;
+}
+
+#leftCol table td {
+	width: 100px;
+}
+
+#centerCol {
+	float: left;
+	margin-left: 30px;
+}
+
+#centerCol h3 {
+	margin-bottom: 5px;
+}
+
+#centerCol table th {
+	width: 150px;
+}
+
+#centerCol table td {
+	width: 150px;
+}
+
+#rightCol {
+	float: right;
+}
+
+#rightCol h3 {
+	margin-bottom: 5px;
+}
+
+#rightCol table th {
+	width: 150px;
+}
+
+#rightCol table td {
+	width: 150px;
+}
+
+
+
+
+
+
+
